@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\ThirdParty">
+      <UniqueIdentifier>{1d46ae5e-0233-4075-b99c-e227ef6bcab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\ThirdParty\SequencerNeo">
+      <UniqueIdentifier>{5f0f7204-bb37-4ff1-a3e5-7525ca594ef5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\ThirdParty\ImGui">
+      <UniqueIdentifier>{496a5892-442f-47ff-8631-69f4f0fb5267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Engine">
+      <UniqueIdentifier>{c806206b-cc75-4b44-abe1-3bcd3db19d6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Window">
+      <UniqueIdentifier>{d5c79c36-273b-4bbc-b0a7-78cb049cbea9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Utils">
+      <UniqueIdentifier>{9083453a-f638-4ee6-89bd-81965d13123a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\OpenGL">
+      <UniqueIdentifier>{3d6a8c7b-d8e3-4d3d-bba0-880d2bb1dbf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\OpenGL\SymbolMSDF">
+      <UniqueIdentifier>{53507f6e-754a-4bd3-a227-5ca10ac65c46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\OpenGL\Shaders">
+      <UniqueIdentifier>{860d2dc3-6bc9-481a-a6c6-f3562e4d9415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\OpenGL\Texture">
+      <UniqueIdentifier>{501026fa-d573-4a38-ad64-462d36c4bd8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\OpenGL\RenderObjects">
+      <UniqueIdentifier>{ea0f8f36-17cf-4fe8-b04d-64a449cc520a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\OpenGL\Font">
+      <UniqueIdentifier>{fbc6d1c4-f6b4-433b-b6f3-a35e01034c00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\OpenGL\CurveBezier">
+      <UniqueIdentifier>{5a826a09-d0bd-4e9f-939b-2e51edc16685}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\OpenGL\CurveBezier\ImGui">
+      <UniqueIdentifier>{8008463f-2208-4bf3-8737-84a1b57580af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\OpenGL\UBO">
+      <UniqueIdentifier>{c1984d59-8e80-4661-b5b0-9a308881000b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\OpenGL\UBO\MyUBOs">
+      <UniqueIdentifier>{398e9460-c6b7-448e-9daf-1f555affa3e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\OpenGL\Framebuffer">
+      <UniqueIdentifier>{c503fcc0-4d76-4609-8fdb-da429e991a1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\Data">
+      <UniqueIdentifier>{9d0c8c76-afe3-4417-a5e4-6383bc3f7f69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\Data\Fonts">
+      <UniqueIdentifier>{489fe8a9-d42c-4d40-8045-6f57ceda3f7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\Data\FontMSDF">
+      <UniqueIdentifier>{0a202c51-91dd-49c9-9d66-3da9c3dfdacc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\Data\FontMSDF\Shaders">
+      <UniqueIdentifier>{62efcb59-73ad-4667-8851-588950a46a69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\AnimationSequencer">
+      <UniqueIdentifier>{1a489dbe-6a96-4ff6-a058-01bb3a0dbf93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\AnimationDrawer">
+      <UniqueIdentifier>{da882df8-d774-478d-a27b-8f143ebd2ffb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ThirdParty\ImGuiSequencerNeo\imgui_neo_internal.cpp">
+      <Filter>Исходные файлы\ThirdParty\SequencerNeo</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ThirdParty\ImGuiSequencerNeo\imgui_neo_sequencer.cpp">
+      <Filter>Исходные файлы\ThirdParty\SequencerNeo</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CurveBezier\CurveBezier.cpp">
+      <Filter>Исходные файлы\OpenGL\CurveBezier</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CurveBezier\CurveBezierArray.cpp">
+      <Filter>Исходные файлы\OpenGL\CurveBezier</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RenderObject\OpenGL.Quad.cpp">
+      <Filter>Исходные файлы\OpenGL\RenderObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RenderObject\OpenGL.Quad.SymbolMSDF.Instance.cpp">
+      <Filter>Исходные файлы\OpenGL\RenderObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CurveBezier\ImGui\CurveArrayEditor.cpp">
+      <Filter>Исходные файлы\OpenGL\CurveBezier\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ThirdParty\ImGui\imgui.cpp">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ThirdParty\ImGui\imgui_demo.cpp">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ThirdParty\ImGui\imgui_draw.cpp">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ThirdParty\ImGui\imgui_tables.cpp">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ThirdParty\ImGui\imgui_widgets.cpp">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Engine.cpp">
+      <Filter>Исходные файлы\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Window\Window.cpp">
+      <Filter>Исходные файлы\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Window\Manager\WindowManager.cpp">
+      <Filter>Исходные файлы\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\Text\Encoding\Unicode\Utils.Encoding.Unicode.cpp">
+      <Filter>Исходные файлы\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\Text\Encoding\UTF8\Utils.Encoding.UTF8.cpp">
+      <Filter>Исходные файлы\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\Text\Encoding\Wstring\Utils.Encoding.Wstring.cpp">
+      <Filter>Исходные файлы\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\File\Utils.File.cpp">
+      <Filter>Исходные файлы\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\Text\Utils.Text.cpp">
+      <Filter>Исходные файлы\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\Timer\Utils.Timer.cpp">
+      <Filter>Исходные файлы\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Font\Font.cpp">
+      <Filter>Исходные файлы\OpenGL\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Texture\Texture.cpp">
+      <Filter>Исходные файлы\OpenGL\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DrawableObjects\SumbolMSDF.cpp">
+      <Filter>Исходные файлы\OpenGL\SymbolMSDF</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ThirdParty\ImGui\imgui_impl_glfw.cpp">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ThirdParty\ImGui\imgui_impl_opengl3.cpp">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ThirdParty\ImGui\implot.cpp">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ThirdParty\ImGui\implot_demo.cpp">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ThirdParty\ImGui\implot_items.cpp">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UBO\UBO.cpp">
+      <Filter>Исходные файлы\OpenGL\UBO</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framebuffer\Framebuffer.cpp">
+      <Filter>Исходные файлы\OpenGL\Framebuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AnimationSequencer\AnimationSequencer.cpp">
+      <Filter>Исходные файлы\AnimationSequencer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AnimationDrawer\AnimationDrawer.cpp">
+      <Filter>Исходные файлы\AnimationDrawer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\ThirdParty\ImGuiSequencerNeo\imgui_neo_internal.h">
+      <Filter>Исходные файлы\ThirdParty\SequencerNeo</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\ImGuiSequencerNeo\imgui_neo_sequencer.h">
+      <Filter>Исходные файлы\ThirdParty\SequencerNeo</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CurveBezier\CurveBezier.h">
+      <Filter>Исходные файлы\OpenGL\CurveBezier</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CurveBezier\CurveBezierArray.h">
+      <Filter>Исходные файлы\OpenGL\CurveBezier</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RenderObject\OpenGL.Quad.h">
+      <Filter>Исходные файлы\OpenGL\RenderObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RenderObject\OpenGL.Quad.SymbolMSDF.Instance.h">
+      <Filter>Исходные файлы\OpenGL\RenderObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Shaders\Shader.h">
+      <Filter>Исходные файлы\OpenGL\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CurveBezier\ImGui\CurveArrayEditor.h">
+      <Filter>Исходные файлы\OpenGL\CurveBezier\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\ImGui\imconfig.h">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\ImGui\imgui.h">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\ImGui\imgui_internal.h">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\ImGui\imstb_rectpack.h">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\ImGui\imstb_textedit.h">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\ImGui\imstb_truetype.h">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Engine.h">
+      <Filter>Исходные файлы\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Window\Window.h">
+      <Filter>Исходные файлы\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Window\Manager\WindowManager.h">
+      <Filter>Исходные файлы\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Text\Encoding\Unicode\Utils.Encoding.Unicode.h">
+      <Filter>Исходные файлы\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Text\Encoding\UTF8\Utils.Encoding.UTF8.h">
+      <Filter>Исходные файлы\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Text\Encoding\Wstring\Utils.Encoding.Wstring.h">
+      <Filter>Исходные файлы\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\File\Utils.File.h">
+      <Filter>Исходные файлы\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Text\Utils.Text.h">
+      <Filter>Исходные файлы\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Timer\Utils.Timer.h">
+      <Filter>Исходные файлы\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Font\Font.h">
+      <Filter>Исходные файлы\OpenGL\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Texture\Texture.h">
+      <Filter>Исходные файлы\OpenGL\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DrawableObjects\SymbolMSDF.h">
+      <Filter>Исходные файлы\OpenGL\SymbolMSDF</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\ImGui\imgui_impl_glfw.h">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\ImGui\imgui_impl_opengl3.h">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\ImGui\imgui_impl_opengl3_loader.h">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\ImGui\imgui_markdown.h">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\ImGui\imgui_memory_editor.h">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\ImGui\implot.h">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\ImGui\implot_internal.h">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UBO\UBO.h">
+      <Filter>Исходные файлы\OpenGL\UBO</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UBO\DataUBO.h">
+      <Filter>Исходные файлы\OpenGL\UBO\MyUBOs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Framebuffer\Framebuffer.h">
+      <Filter>Исходные файлы\OpenGL\Framebuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AnimationSequencer\AnimationSequencer.h">
+      <Filter>Исходные файлы\AnimationSequencer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AnimationDrawer\AnimationDrawer.h">
+      <Filter>Исходные файлы\AnimationDrawer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Source\ThirdParty\ImGui\imgui.ini">
+      <Filter>Исходные файлы\ThirdParty\ImGui</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Data\FontMSDF\Shaders\Symbol_MSDF_Instance.frag">
+      <Filter>Файлы ресурсов\Data\FontMSDF\Shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Data\FontMSDF\Shaders\Symbol_MSDF_Instance.vert">
+      <Filter>Файлы ресурсов\Data\FontMSDF\Shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Data\FontMSDF\Shaders\Symbol_MSDF_Velocity_Instance.frag">
+      <Filter>Файлы ресурсов\Data\FontMSDF\Shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Data\FontMSDF\Shaders\Symbol_MSDF_Velocity_Instance.geom">
+      <Filter>Файлы ресурсов\Data\FontMSDF\Shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Data\FontMSDF\Shaders\Symbol_MSDF_Velocity_Instance.vert">
+      <Filter>Файлы ресурсов\Data\FontMSDF\Shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Data\FontMSDF\Shaders\FinalFrameBuffer.vert">
+      <Filter>Файлы ресурсов\Data\FontMSDF\Shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Data\FontMSDF\Shaders\FinalFrameBuffer.frag">
+      <Filter>Файлы ресурсов\Data\FontMSDF\Shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Data\Fonts\JetBrainsMonoNL-Regular.ttf">
+      <Filter>Файлы ресурсов\Data\Fonts</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Data\FontMSDF\Atlas.png">
+      <Filter>Файлы ресурсов\Data\FontMSDF</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Data\FontMSDF\DataAtlas.txt">
+      <Filter>Файлы ресурсов\Data\FontMSDF</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+</Project>

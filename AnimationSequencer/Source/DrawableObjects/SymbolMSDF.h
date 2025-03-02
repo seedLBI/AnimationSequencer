@@ -28,7 +28,6 @@ public:
 	Glyph glyph;
 	int indexObject;
 
-	CurveBazierArray_Vector2 Anchor_Point;
 	CurveBazierArray_Vector2 Position;
 	CurveBazierArray_Vector2 Size;
 	CurveBazierArray_Vector1 Rotate;

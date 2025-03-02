@@ -10,6 +10,9 @@ private:
 
 public:
 	float default_value = 0.f;
+	bool OnlyOnePoint = true;
+
+
 
 	CurveBazierArray();
 
@@ -19,9 +22,21 @@ public:
 	std::vector<glm::vec2> GetSamples();
 
 	std::vector<CubicCurveBezier> GetCurves();
-	void AddCurve(const CubicCurveBezier& curve);
+	std::vector<CubicCurveBezier>* GetCurves_ptr();
+
+	void AddOffset_X(const float& offset);
+
+
+	void AddCurve(CubicCurveBezier& curve);
+	void SetCurve(CubicCurveBezier& curve, const int& index);
+
+
+
+	void AddPoint(const glm::vec2& point);
 
 	float GetValueFromTime(const float& time);
+
+
 };
 
 

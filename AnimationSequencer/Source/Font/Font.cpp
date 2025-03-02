@@ -9,9 +9,27 @@ Texture* Font::GetTexture() {
 Bounds Font::GetSizeGlyph(int unicode_char) {
     return glyphs[unicode_char].plane;
 }
+
 Metrics Font::GetMetrics() {
     return metrics;
 }
+
+float Font::GetKerning(const int& unicode_1, const int& unicode_2) {
+    
+    for (int i = 0; i < kernings_vector.size(); i++)
+    {
+        if (
+            kernings_vector[i].first.first == unicode_1 && 
+            kernings_vector[i].first.second == unicode_2)
+        {
+            return kernings_vector[i].second;
+        }
+    }
+    return 0.f;
+    
+    //return kernings[unicode_1][unicode_2];
+}
+
 
 Font::Font(const std::string& path2Image, const std::string& path2Data) {
 
@@ -51,17 +69,24 @@ Font::Font(const std::string& path2Image, const std::string& path2Data) {
             Glyph tempGlyph;
 
             int unicode = stoi(data[0]);
+
+            tempGlyph.unicode = stoi(data[0]);
             tempGlyph.advance = stof(data[1]);
 
 
             
 
             if (data.size() > 2) {
-                tempGlyph.plane = { stof(data[2]),stof(data[3]), stof(data[4]),stof(data[5]) };
-                tempGlyph.atlas = { stof(data[6]) / (float)atlas->GetWidth(),
-                                    stof(data[7]) / (float)atlas->GetHeight(),
-                                    stof(data[8]) / (float)atlas->GetWidth(),
-                                    stof(data[9]) / (float)atlas->GetHeight() };
+                tempGlyph.plane = { 
+                    stof(data[2]),
+                    stof(data[3]),
+                    stof(data[4]),
+                    stof(data[5]) };
+                tempGlyph.atlas = { 
+                    stof(data[6]) / (float)atlas->GetWidth(),
+                    stof(data[7]) / (float)atlas->GetHeight(),
+                    stof(data[8]) / (float)atlas->GetWidth(),
+                    stof(data[9]) / (float)atlas->GetHeight() };
             }
             else {
                 tempGlyph.plane = { 0,0,0,0 };
@@ -75,7 +100,10 @@ Font::Font(const std::string& path2Image, const std::string& path2Data) {
             int unicode2 = stoi(data[1]);
             float advance = stof(data[2]);
 
+            kernings_vector.push_back({ {unicode1,unicode2},advance });
+
             kernings[unicode1][unicode2] = advance;
+            //kernings[unicode2][unicode1] = advance;
         }
     }
 }

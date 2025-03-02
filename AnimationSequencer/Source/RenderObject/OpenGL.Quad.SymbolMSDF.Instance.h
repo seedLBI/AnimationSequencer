@@ -11,7 +11,10 @@ public:
 	~Quad_SymbolMSDF_instance();
 
 	void AddSymbol(SymbolMSDF_Data* symbol);
+	void DeleteSymbol(SymbolMSDF_Data* symbol);
+	void Clear();
 
+	std::vector<SymbolMSDF_Data*>* GetSymbols();
 	void Update(const float& time);
 
 	void Draw();

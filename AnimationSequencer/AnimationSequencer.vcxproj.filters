@@ -82,6 +82,15 @@
     <Filter Include="Исходные файлы\AnimationDrawer">
       <UniqueIdentifier>{da882df8-d774-478d-a27b-8f143ebd2ffb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\AnimationSequencer\CurvePointManager">
+      <UniqueIdentifier>{90b2018d-4f75-4056-b5c3-7e0379feb52e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\AnimationSequencer\Viewport">
+      <UniqueIdentifier>{4759149a-ef76-41da-8bd0-0aee4effe639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\AnimationSequencer\TextCreator">
+      <UniqueIdentifier>{9b2a8234-7e27-417f-91bd-79217b4afc07}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -185,6 +194,15 @@
     </ClCompile>
     <ClCompile Include="Source\AnimationDrawer\AnimationDrawer.cpp">
       <Filter>Исходные файлы\AnimationDrawer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AnimationSequencer\CurvesPointsManager\CurvesPointsManager.cpp">
+      <Filter>Исходные файлы\AnimationSequencer\CurvePointManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AnimationSequencer\Viewport\Viewport.cpp">
+      <Filter>Исходные файлы\AnimationSequencer\Viewport</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AnimationSequencer\TextCreator\TextCreator.cpp">
+      <Filter>Исходные файлы\AnimationSequencer\TextCreator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -301,6 +319,15 @@
     </ClInclude>
     <ClInclude Include="Source\AnimationDrawer\AnimationDrawer.h">
       <Filter>Исходные файлы\AnimationDrawer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AnimationSequencer\CurvesPointsManager\CurvesPointsManager.h">
+      <Filter>Исходные файлы\AnimationSequencer\CurvePointManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AnimationSequencer\Viewport\Viewport.h">
+      <Filter>Исходные файлы\AnimationSequencer\Viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AnimationSequencer\TextCreator\TextCreator.h">
+      <Filter>Исходные файлы\AnimationSequencer\TextCreator</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -24,6 +24,9 @@ void AnimationDrawer::SetVirtualScreenSize(const glm::vec2& size) {
 void AnimationDrawer::SetTime(const float& time) {
 	this->time = time;
 }
+void AnimationDrawer::SetPrevTime(const float& value) {
+	this->prev_time = value;
+}
 
 void AnimationDrawer::SetSmothness(const float& value) {
 	smoothness = value;
@@ -78,6 +81,7 @@ void AnimationDrawer::Render() {
 	Framebuffer::UnBind();
 }
 void AnimationDrawer::Update() {
+	SymbolsDrawer->Update(prev_time);
 	SymbolsDrawer->Update(time);
 	UpdateUBO();
 }
@@ -91,11 +95,30 @@ void AnimationDrawer::UpdateUBO() {
 		glm::vec3(0.f, 1.f, 0.f)
 	);
 
+	float aspect_ratio;
+
+	if (VirtualScreenSize.x > VirtualScreenSize.y)
+		aspect_ratio = VirtualScreenSize.y / VirtualScreenSize.x;
+	else
+		aspect_ratio = VirtualScreenSize.x / VirtualScreenSize.y;
+
+	projection = glm::ortho(
+		-1.f,
+		 1.f,
+		-1.f * aspect_ratio,
+		 1.f * aspect_ratio,
+		-100.f,
+		 100.f
+	);
+
+	/*
 	projection = glm::ortho(
 		-(VirtualScreenSize.x), VirtualScreenSize.x,
 		-(VirtualScreenSize.y), (VirtualScreenSize.y),
 		-1000.0f, 1000.0f
 	);
+	*/
+
 
 	UBO_data.view = view;
 	UBO_data.projection = projection;
@@ -200,16 +223,16 @@ void AnimationDrawer::LoadShaders() {
 	);
 
 	Final_Shader->use();
-	Final_Shader->setInt("texture_color", 2);
-	Final_Shader->setInt("texture_velocity", 1);
-	Final_Shader->setFloat("targetFPS", targetFPS);
-	Final_Shader->setInt("MAX_SAMPLES", 32);
+		Final_Shader->setInt("texture_color", 2);
+		Final_Shader->setInt("texture_velocity", 1);
+		Final_Shader->setFloat("targetFPS", targetFPS);
+		Final_Shader->setInt("MAX_SAMPLES", 32);
 
 
 	MSDF_Shader->use();
-	MSDF_Shader->setInt("Texture_MSDF_Atlas", 0);
-	MSDF_Shader->setFloat("pxRange", MSDF_Font->GetMetrics().pxRange);
-	MSDF_Shader->setFloat("smoothness", smoothness);
+		MSDF_Shader->setInt("Texture_MSDF_Atlas", 0);
+		MSDF_Shader->setFloat("pxRange", MSDF_Font->GetMetrics().pxRange);
+		MSDF_Shader->setFloat("smoothness", smoothness);
 }
 
 

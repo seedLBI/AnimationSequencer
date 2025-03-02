@@ -4,6 +4,25 @@ void Quad_SymbolMSDF_instance::AddSymbol(SymbolMSDF_Data* symbol) {
 	symbols.push_back(symbol);
 }
 
+void Quad_SymbolMSDF_instance::DeleteSymbol(SymbolMSDF_Data* symbol) {
+	for (int i = 0; i < symbols.size(); i++) {
+		if (symbols[i] == symbol) {
+			symbols.erase(symbols.begin() + i);
+			break;
+		}
+	}
+}
+
+void Quad_SymbolMSDF_instance::Clear() {
+	symbols.clear();
+}
+
+std::vector<SymbolMSDF_Data*>* Quad_SymbolMSDF_instance::GetSymbols() {
+	return &symbols;
+}
+
+
+
 void Quad_SymbolMSDF_instance::Update(const float& time) {
 	static int LastCount_symbols = 0;
 

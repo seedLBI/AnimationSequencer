@@ -7,13 +7,28 @@
 #include "Texture/Texture.h"
 
 struct Bounds {
-    float left;
-    float bottom;
-    float right;
-    float top;
+    float left;   //2
+    float bottom; //3
+    float right;  //4
+    float top;    //5
+
+    float GetX() {
+        return left;
+    }
+    float GetY() {
+        return 1.f - bottom - (top - bottom);
+    }
+
+    float GetWidth() {
+        return right - left;
+    }
+    float GetHeight() {
+        return top - bottom;
+    }
 };
 
 struct Glyph {
+    int unicode;
     float advance;
     Bounds plane;
     Bounds atlas;
@@ -39,10 +54,13 @@ public:
     Glyph GetGlyphByUnicode(int unicode);
     Metrics GetMetrics();
 
+    float GetKerning(const int& unicode_1, const int& unicode_2);
+
 private:
     Texture* atlas;
     Metrics metrics;
     robin_hood::unordered_flat_map<int, Glyph> glyphs;
+    std::vector<std::pair<std::pair<int, int>, float>> kernings_vector;
     robin_hood::unordered_flat_map<int, robin_hood::unordered_flat_map<int, float>> kernings;
 };
 

@@ -20,6 +20,8 @@ public:
 	void Update();
 
 	void SetTime(const float& value);
+	void SetPrevTime(const float& value);
+
 	void SetSmothness(const float& value);
 	void SetTargetFPS(const int& value);
 
@@ -40,6 +42,8 @@ public:
 private:
 
 	float time = 0.f;
+	float prev_time = 0.f;
+
 	float smoothness = 0.2f;
 	float targetFPS = 120.f;
 
